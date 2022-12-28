@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>订阅的到期和自动续订 | Herstory</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://her-story.github.io/favicon.ico?v=1672222834302">
+<link rel="stylesheet" href="https://her-story.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="扣款失败后，自动续订会怎样？
+
+订阅的续订过程从到期日的前10天开始。在这10天里，App Store 会检查任何可能引起延期或阻止自动续订的结算问题，例如：
+用户的付款方式不再有效；
+商品在用户购买后涨价；
+商品不再可用；
+App Sto..." />
+    <meta name="keywords" content="App Store,自动续订,订阅" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://her-story.github.io">
+        <img src="https://her-story.github.io/images/avatar.png?v=1672222834302" class="site-logo">
+        <h1 class="site-title">Herstory</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://her-story.github.io/" target="_blank">Herstory</a> | <a class="rss" href="https://her-story.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">订阅的到期和自动续订</h2>
+            <div class="post-date">2019-04-28</div>
+            
+              <div class="feature-container" style="background-image: url('https://her-story.github.io/post-images/ding-yue-de-dao-qi-he-zi-dong-xu-ding.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>扣款失败后，自动续订会怎样？</p>
+<!-- more -->
+<p>订阅的续订过程从到期日的前10天开始。在这10天里，App Store 会检查任何可能引起延期或阻止自动续订的结算问题，例如：</p>
+<p>用户的付款方式不再有效；<br>
+商品在用户购买后涨价；<br>
+商品不再可用；</p>
+<p>App Store 会将问题通知用户，以便他们在订阅到期之前解决，避免订阅服务中断。</p>
+<p>在订阅到期前的24小时内，App Store 开始尝试自动续订。App Store 会在一段时间内多次尝试续订，但是如果失败次数过多，将会最终停止。</p>
+<p><font color="#F08080">注意: 对于结算相关的问题，App Store 最多尝试续订60天。您可以在回执中检查订阅重试标记，以确定 App Store 是否仍在尝试续订。</font><br /></p>
+<p>App Store 在订阅快要到期前开始续订，以防止订阅中断的情况发生。然而中断是避免不了的。举个例子，若用户的付款信息不再有效，则第一次续订尝试以失败告终。如果用户在截止日期后更新了付款信息，那么在截止日期至随后自动续订尝试成功的日期之间，订阅会有短暂的中断。用户也可以取消自动续订，主动让订阅过期，之后在续订，让订阅中断更久。确保你的订阅逻辑可以正确处理各种长短的中断时间。你可以检查自动续订状态字段以确定订阅的续订状态。</p>
+<p>续订成功后，StoreKit 会在交易队列中添加一条续订的交易。App 在启动时检查交易队列，并以处理其他交易的方式处理续订。注意，如果 App 在订阅续订时已在运行，则不会调用交易观察; App 会在下次启动时查到续订。</p>
+<p>举个例子，下面的时间线显示了一个按月续订用户的账户。在这个示例中，由于结算问题，订阅暂时中断。用户把问题解决后，订阅以新的周期开始续订。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><font size="4">日期</font><br /></th>
+<th style="text-align:right"><font size="4">事件</font><br /></th>
+<th style="text-align:center"><font size="4">订阅状态</font><br /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><font size="2">2月20日</font><br /></td>
+<td style="text-align:right"><font size="2">用户开始按月续订。服务立即可用。</font><br /></td>
+<td style="text-align:center"><font size="2">激活</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">3月20日</font><br /></td>
+<td style="text-align:right"><font size="2">自动续订一个月。服务继续可用。</font><br /></td>
+<td style="text-align:center"><font size="2">激活</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">4月19日</font><br /></td>
+<td style="text-align:right"><font size="2">用户的付款方式到期。</font><br /></td>
+<td style="text-align:center"><font size="2">激活</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">4月20日</font><br /></td>
+<td style="text-align:right"><font size="2">交易失败，导致续订失败。订阅中断。</font><br /></td>
+<td style="text-align:center"><font size="2">中断</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">5月5日</font><br /></td>
+<td style="text-align:right"><font size="2">用户更新付款方式。App Store 能够成功续订订阅。服务立即可用。</font><br /></td>
+<td style="text-align:center"><font size="2">激活</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">6月5日</font><br /></td>
+<td style="text-align:right"><font size="2">自动续订一个月。服务继续可用。</font><br /></td>
+<td style="text-align:center"><font size="2">激活</font><br /></td>
+</tr>
+</tbody>
+</table>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://her-story.github.io/tag/T5ldc-Sjev/" class="tag">
+                    App Store
+                  </a>
+                
+                  <a href="https://her-story.github.io/tag/_U87ZON4uy/" class="tag">
+                    自动续订
+                  </a>
+                
+                  <a href="https://her-story.github.io/tag/bJJ5tHlqPN/" class="tag">
+                    订阅
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://her-story.github.io/post/app-store-pre-orderyu-ding/">
+                  <h3 class="post-title">
+                    App Store Pre-Order （预订）
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '7a576b156634f6a0e760',
+        clientSecret: 'bcdccee8ba1175a8f8338188368b4cf55e97fa57',
+        repo: 'her-story.github.io',
+        owner: 'her-story',
+        admin: ['her-story'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

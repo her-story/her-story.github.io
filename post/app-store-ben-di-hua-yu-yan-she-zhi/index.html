@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>App Store 本地化语言设置 | Herstory</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://her-story.github.io/favicon.ico?v=1672222834302">
+<link rel="stylesheet" href="https://her-story.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+
+
+国家
+语言
+
+
+
+
+Australia
+English (Australia)
+
+
+Bhutan
+English (U.K.)
+
+
+Brunei Darussalam
+English (U.K.)
+
+
+Cambodia
+English..." />
+    <meta name="keywords" content="itc,App Store,ASO" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://her-story.github.io">
+        <img src="https://her-story.github.io/images/avatar.png?v=1672222834302" class="site-logo">
+        <h1 class="site-title">Herstory</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://her-story.github.io/" target="_blank">Herstory</a> | <a class="rss" href="https://her-story.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">App Store 本地化语言设置</h2>
+            <div class="post-date">2019-05-22</div>
+            
+              <div class="feature-container" style="background-image: url('https://her-story.github.io/post-images/app-store-ben-di-hua-yu-yan-she-zhi.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <table>
+<thead>
+<tr>
+<th style="text-align:left"><font size="4">国家</font><br /></th>
+<th style="text-align:right"><font size="4">语言</font><br /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><font size="2">Australia</font><br /></td>
+<td style="text-align:right"><font size="2">English (Australia)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Bhutan</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Brunei Darussalam</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Cambodia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">China</font><br /></td>
+<td style="text-align:right"><font size="2">Chinese (Simplified), English   (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Fiji</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Hong Kong</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Chinese   (Traditional)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Indonesia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Indonesian</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Japan</font><br /></td>
+<td style="text-align:right"><font size="2">Japanese, English (U.S.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Korea</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Kyrgyzstan</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Lao</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Macau</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Chinese   (Traditional)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Malaysia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Malay</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Micronesia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Mongolia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Nepal</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">New Zealand</font><br /></td>
+<td style="text-align:right"><font size="2">English (Australia)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Pakistan</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Palau</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Papua New Guinea</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Philippines</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Singapore</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Chinese   (Simplified)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Solomon Islands</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Sri Lanka</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Taiwan</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Chinese   (Traditional)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Tajikistan</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Thailand</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Thai</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Tajikistan</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Turkmenistan</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Uzbekistan</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Vietnam</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Vietnamese</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Canada</font><br /></td>
+<td style="text-align:right"><font size="2">English (Canada), French (Canada)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">United States</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.S.), Spanish (Mexico)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Anguilla</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Antigua and Barbuda</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Argentina</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Bahamas</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Barbados</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Belize</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Spanish (Mexico)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Bermuda</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Bolivia</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Brazil</font><br /></td>
+<td style="text-align:right"><font size="2">Portuguese (Brazil), English   (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Cayman Islands</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Chile</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Colombia</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Costa Rica</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Dominica</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Dominican Republic</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Ecuador</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">El Salvador</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Grenada</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Guatemala</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Guyana</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Honduras</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Jamaica</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Mexico</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Montserrat</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Nicaragua</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Panama</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Paraguay</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Peru</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Saint Lucia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">St. Kitts and Nevis</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">St. Vincent and The Grenadines</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Suriname</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Dutch</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Trinidad and Tobago</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Turks and Caicos</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Uruguay</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Spanish (Mexico)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Venezuela</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Mexico), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Virgin Islands, British</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Albania</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Austria	German</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Belarus</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Belgium</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), French,Dutch</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Bulgaria</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Croatia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Cyprus</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Greek,Turkish</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Czech Republic</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Denmark</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Danish</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Estonia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Finland</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Finnish</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">France</font><br /></td>
+<td style="text-align:right"><font size="2">French, English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Germany</font><br /></td>
+<td style="text-align:right"><font size="2">German, English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Greece</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Greek</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Hungary</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Iceland</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Ireland</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Italy</font><br /></td>
+<td style="text-align:right"><font size="2">Italian, English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Latvia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Lithuania</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Luxembourg</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), French,German</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Macedonia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Malta</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Moldova</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Netherlands</font><br /></td>
+<td style="text-align:right"><font size="2">Dutch, English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Norway</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.),Norwegian</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Poland</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Portugal</font><br /></td>
+<td style="text-align:right"><font size="2">Portuguese (Portugal),English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Romania</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Russia</font><br /></td>
+<td style="text-align:right"><font size="2">Russian, English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Slovakia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Slovenia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Spain</font><br /></td>
+<td style="text-align:right"><font size="2">Spanish (Spain), English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Sweden</font><br /></td>
+<td style="text-align:right"><font size="2">Swedish, English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Switzerland</font><br /></td>
+<td style="text-align:right"><font size="2">German, English   (U.K.),French, Italian</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Ukraine</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), Russian</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">United Kingdom</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.), English (Australia)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Algeria</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Angola</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Armenia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Azerbaijan</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Bahrain</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Benin</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Botswana</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Burkina Faso</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Cape Verde</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Chad</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Congo</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Egypt</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Gambia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Ghana</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Guinea-Bissau</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">India</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Israel</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Jordan</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Kenya</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Kuwait</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Lebanon</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Liberia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Madagascar</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Malawi</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Mali</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Mauritania</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Mauritius</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Mozambique</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Namibia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Niger</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Nigeria</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Oman</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Qatar</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Saudi Arabia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Senegal</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Seychelles</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Sierra Leone</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">South Africa</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Swaziland</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">São Tomé and Príncipe</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Tanzania</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Tunisia</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Uganda</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">United Arab Emirates</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Yemen</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+<tr>
+<td style="text-align:left"><font size="2">Zimbabwe</font><br /></td>
+<td style="text-align:right"><font size="2">English (U.K.)</font><br /></td>
+</tr>
+</tbody>
+</table>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://her-story.github.io/tag/H8WN7VUBg/" class="tag">
+                    itc
+                  </a>
+                
+                  <a href="https://her-story.github.io/tag/T5ldc-Sjev/" class="tag">
+                    App Store
+                  </a>
+                
+                  <a href="https://her-story.github.io/tag/pDtmsQHCqw/" class="tag">
+                    ASO
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://her-story.github.io/post/ge-guo-ying-wen-ming-ji-suo-xie/">
+                  <h3 class="post-title">
+                    各国英文名及缩写
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '7a576b156634f6a0e760',
+        clientSecret: 'bcdccee8ba1175a8f8338188368b4cf55e97fa57',
+        repo: 'her-story.github.io',
+        owner: 'her-story',
+        admin: ['her-story'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
